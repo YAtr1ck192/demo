@@ -17,7 +17,9 @@
         </a>
         <a href="/workshops">Цехи</a>
     </header>
-    @yield('content')
+    <div class="content-wrapper">
+        @yield('content')
+    </div>
 </body>
 </html>
 
@@ -62,5 +64,12 @@
         width: 80px;
         height: 80px;
         object-fit: contain;
+    }
+
+    .content-wrapper {
+        max-width: 75%;
+        width: 100%;
+        padding: 20px;
+        margin: 0 auto;
     }
 </style>
